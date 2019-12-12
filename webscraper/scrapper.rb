@@ -35,9 +35,9 @@ class Scrapper
   end
 end
 
-base_url = 'https://www.myco.dica.gov.mm/api/corp/SearchCorpByTerm?IsAutocomplete=false&Option=2'
+base_url = 'https://www.myco.dica.gov.mm/api/corp/SearchCorpByTerm?IsAutocomplete=false&Option=1'
 
-# search_terms = [*('a'..'z'),*(0..9)]
-search_terms = ['a']
+search_terms = [*('a'..'z'),*('0'..'9')]
+# search_terms = ['a']
 
 Scrapper.search(search_terms, base_url)
